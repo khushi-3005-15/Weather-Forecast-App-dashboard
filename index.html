@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://openweathermap.org/_next/image?url=%2Fpayload%2Fapi%2Fmedia%2Ffile%2Flogo_white.png&w=256&q=75">
+                </div>
+                <div class="reg-but">
+                    <button>Login</button>
+                    <button>sign up</button>
+                </div>
+            </div>
+        </header>
+        <div class="select-container">
+            <div class="main">
+                <h1>Need to go out? Let's <br> Check the Sky</h1>
+            </div>
+            <div class="form">
+                 <input type="text" id="city" placeholder="Enter City Name">
+
+                <button onclick="getWeather()">
+                 See Result <i class="fa-regular fa-cloud"></i>
+                </button>
+
+                <div id="weather-box">
+                    <h2 id="city-name"></h2>
+
+                    <div class="weather-info">
+                        <div class="card">
+                            <h3>🌡 Temperature</h3>
+                             <p id="temp"> </p>
+                        </div>
+                        <div class="card">
+                            <h3>💧 Humidity</h3>
+                             <p id="Humidity"> </p>
+                        </div>
+                        <div class="card">
+                            <h3>🌬 Wind Speed</h3>
+                             <p id="Wind"> </p>
+                        </div>
+                        <div class="card">
+                            <h3>🌬 Weather</h3>
+                             <p id="Weather"> </p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div> 
+    </div>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

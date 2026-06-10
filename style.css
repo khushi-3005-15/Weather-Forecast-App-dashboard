@@ -1,0 +1,114 @@
+body{
+   background: linear-gradient(
+    180deg,
+    #0a6e99,
+    #1f518a,
+    #051b42
+);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    height:690px;
+}
+
+.navbar{
+    display:flex;
+}
+
+.logo img{
+   width:100px;
+   height:50px;
+   padding-left:1rem;
+   margin-top:1rem;
+}
+
+.reg-but{
+    padding-left: 80%;
+    margin-top: 1rem;
+}
+
+.reg-but button{
+    border-radius: 1rem;
+    margin-left: 0%;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size:25px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(242, 174, 233);
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:17px;
+}
+
+.form input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height:2rem;
+    width:20rem;
+    border-radius: 2rem;
+}
+
+.form button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height:2rem;
+    width:10rem;
+    border-radius: 2rem;
+    cursor:pointer;
+}
+
+.weather-info{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:90px;
+    margin-top: 30px;
+}
+
+.card{
+    width:150px;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(5px);
+    text-align:center;
+    color:white;
+}
+
+#city-name{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+
+
+#result{
+    margin-top:20px;
+    color:white;
+    text-align:center;
+    font-size:18px;
+}
